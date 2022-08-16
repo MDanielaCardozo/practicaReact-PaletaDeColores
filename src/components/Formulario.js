@@ -8,7 +8,7 @@ const Formulario = () => {
   let coloresLocalStorage = JSON.parse(localStorage.getItem('listaColores')) || [];
 
   const [arregloColores, setArregloColores] = useState(coloresLocalStorage);
-  const [color, setColor] = useState();
+  const [color, setColor] = useState('');
 
   useEffect(() => {
     localStorage.setItem('listaColores', JSON.stringify(arregloColores));
